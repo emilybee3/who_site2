@@ -106,7 +106,7 @@
       // }); <!--script for tardisMenu-->
 
 
-  var doctors = new Array("smith.png", "tennant.png", "eccelston.png");
+  var doctors = new Array("smith.png", "capaldi.png", "tennant.png");
   $(document).ready(function() {
             var random = doctors[Math.floor(Math.random() * doctors.length)];
             
