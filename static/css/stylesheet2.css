@@ -5,20 +5,29 @@ body {
 
 .img-circle  {
    border-radius: 50%;
-   -webkit-transform:scale(0.7);
-   -moz-transform:scale(0.7);
-   -ms-transform:scale(0.7);
-   transform:scale(0.7); 
+   -webkit-transform:scale(0.8);
+   -moz-transform:scale(0.8);
+   -ms-transform:scale(0.8);
+   transform:scale(0.8); 
 }
 
 h3 {
+margin-top:-20px;
 text-align: center;
 color:white;
+font-family:"Patrick Hand SC";
+font-size: 40px;
+
+
+
 }
 
 p {
 text-align: center;
 color:white;
+font-family:"Crafty Girls";
+
+font-size: 20px;
 }
 
 .tardisMenu {
@@ -56,6 +65,7 @@ color:white;
         width: 180px;
         height: 100px;
         position: absolute;
+        font-size: 40px;
     }
 
     #nav {
@@ -67,6 +77,8 @@ color:white;
         position:absolute;
         width: 180px;
         height: 900px;
+        z-index: 50;
+        font-size: 30px;
     }
 
     .perspective{
@@ -119,28 +131,32 @@ color:white;
     h2 {
         position:center;
         text-align: center;
-        font-size: 35px;
+        font-size: 50px;
         color:white;
-        font-family: 'Monofett', cursive;
-        text-shadow: 2px 2px #000000;
+        font-family:"Patrick Hand SC";
+        text-shadow: 3px 3px #000000;
     }
 
     ul {
         padding-top: 10px;
         text-align: center;
-        font-size: 30px;
-        font-family: 'Monofett', cursive;
+        font-size: 60px;
+        font-family: "Crafty Girls";
         color:white;
-        text-shadow: 2px 2px #000000;
+        text-shadow: 3px 3px #000000;
 
     }
     
     a {
         color:white;
+        z-index: 100;
+        padding-left: 10px
     }
+    
     a:hover {
         color:white;
-        text-shadow: 2px 2px #000000;
+        text-shadow: 4px 4px #000000;
+        z-index: 100;
     }
 
     .grow {
@@ -148,6 +164,7 @@ color:white;
         transition: all .2s ease-in-out;
         transform-origin: 10%;
         color:white;
+        z-index: 100;
 
     }
 
@@ -205,10 +222,16 @@ color:white;
     .copyrite {
         position:relative;
         margin-top:200px;
+        font-family:"Patrick Hand SC";
     }
 
 .page-header {
     text-align: center;
     color:white;
+    font-family:"Patrick Hand SC";
 
+}
+
+.arch {
+    font-family: "Crafty Girls";
 }
