@@ -13,10 +13,14 @@
     <title>3 Col Portfolio - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/static/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/static/libs/bootstrap/css/3-col-portfolio.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="static/css/stylesheet2.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700|Amatic+SC:400,700|Special+Elite|Fredericka+the+Great|Creepster|Walter+Turncoat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,215 +28,97 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-    .img-circle  {
-   border-radius: 50%;
-   -webkit-transform:scale(0.3);
-   -moz-transform:scale(0.3);
-   -ms-transform:scale(0.3);
-   transform:scale(0.3); 
-}
 
-/*p {
-   text-align: center
-}*/
-
-.img-circle {
-  -webkit-transform:scale(0.5);
--moz-transform:scale(0.5);
--ms-transform:scale(0.5);
-transform:scale(0.5); 
-float:"left";    
-}
-    </style>
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+            
 
     <!-- Page Content -->
     <div class="container">
 
         <!-- Page Header -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Page Heading
-                    <small>Secondary Text</small>
-                </h1>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h2 class="page-header"> Laughing at Archiologists
+                </h2>
             </div>
-        </div>
-        <!-- /.row -->
+        </div> <!-- /.row -->
 
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-md-4 portfolio-item">
-              <h1>LEFT COL</h1>
-                <a href="#">
-                    <img class="img-responsive img-circle" src="/static/img/riley.jpg" alt="">
-                </a>
-                <p>
-                    <a href="#">Project Name</a>
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <h1>MIDEEL COL</h1>
-
-                <a href="#">
+            <div class="col-md-3 col lg-3 col sm-12 portfolio-item">
+                <a href="http://ryesilverman.tumblr.com/">
+                    <img class="img-responsive img-circle" src="/static/css/img/riley.jpg" alt="">
                 </a>
                 <h3>
-                    <a href="#">Project Name</a>
+                    Riley Silverman
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                            <h1>RIGHT COL</h1>
+                <p>Is a comedian</p>
 
-                <a href="#">
-                    <img class="img-responsive img-circle" src="/static/img/riley.jpg" alt="">
+                <a href="http://brockwilbur.com/">
+                    <img src="static/css/img/brock.jpg" class="img-responsive img-circle" id="brockPic">
                 </a>
                 <h3>
-                    <a href="#">Project Name</a>
+                    Brock Wilbur
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p>Is a comedian and stuff</p>
+            </div>
+        <div class="col-md-6 col-sm-12 col-lg-6 portfolio-item">
+            <div class="tardisMenu">
+              <div class="controlRoom">    
+              </div>
+
+
+              <div class="perspective">
+
+
+                  <div class="tardis" id="door" onclick="openDoor(this)">
+                    <div class="thumb">
+
+
+                    </div>
+                  </div>
+                    <div class="animisition" id="nav">
+                      <nav class="navbar hidden">
+                        <ul>
+                          <h2>All of Time and Space Awaits</h2><br><br>
+
+                            <a class="navLink" href="podcasts.html">Episodes</a> <br><br>
+                            <a class="navLink" href="blog.html">Blog</a><br><br>
+                            <a class="navLink" href="support.html">Support Us!</a><br><br>
+
+                        </ul>
+                      </nav>
+                    </div>
+                <!-- </div> -->
+              </div>
+            </div> <!--closes tardisMenu -->
+        </div>
+            
+            <div class="col-md-3 col lg-3 col sm-12 portfolio-item">
+
+                <a href="https://itunes.apple.com/us/podcast/podcast-live-from-satellite-5/id914505115?mt=2">
+                    <img src="" id="turblesPic" class="img-circle">
+                </a>
+                    <h3>
+                Turbles
+                </h3>
+                    <p>does stuff</p>  
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-        </div>
 
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-        </div>
-        <!-- /.row -->
 
-        <hr>
-
-        <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
 
         <!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                <div class="col-lg-12 copyrite">
+                    <p>Website by Me. Something Clever</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -242,10 +128,12 @@ float:"left";
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="/static/bootsrap/js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/static/bootsrap/js/bootstrap.min.js"></script>
+    <script src="/static/libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="/static/js/app.js"></script>
 
 </body>
 
