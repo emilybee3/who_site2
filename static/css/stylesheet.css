@@ -1,0 +1,252 @@
+div.container-fluid {
+    overflow:hidden;
+    width:100%;
+}
+
+    .tardisMenu {
+    /*background-color: orange;*/
+   /* position:absolute;
+    left:50%;*/
+    width: 600px;
+    height: 1137px;
+    /*margin-top: -150px;*/
+    /*margin-left: -300px;*/
+    -webkit-transform:scale(0.7);
+    -moz-transform:scale(0.7);
+    -ms-transform:scale(0.7);
+    transform:scale(0.7);
+    /*float:center;*/
+    }
+
+
+    .tardis.perspective #door {
+        /*background-color: orange;*/
+         margin-top:180px
+        width: 180px;
+        height: 900px;
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+    .navLink
+
+
+    nav.navbar {
+        /*display: none;*/
+        top: 30%;
+        left:25%;
+        margin-right: -10%;
+        width: 180px;
+        height: 100px;
+        position: absolute;
+    }
+
+    #nav {
+        /*background-color: gray;*/
+        padding-top: 300px;
+        padding-left: 67px;
+        margin-left: 67px;
+        /*margin-right: -10%;*/
+        position:absolute;
+        width: 180px;
+        height: 900px;
+    }
+
+    .perspective{
+        /*background-color:blue;*/
+        background: url("static/tardis_background.png");            
+        background-repeat: no-repeat;
+                background-position: center center;
+                position: relative;
+                display: inline;
+                float: left;
+                width: 600px;
+                height: 1137px;
+                margin: 20px;
+                margin-left: 0px;
+                -webkit-perspective: 450;
+                border-radius: 3px;
+                box-sizing: border-box;
+                z-index: 100;
+            }
+
+
+            
+    .thumb /*CHANGES DIV FOR MOUSOVER OF DOOR*/{
+            /*background-color: green;*/
+            background: url("static/door.png");
+                background-repeat: no-repeat;
+                top: 23.5%;
+                left:17%;
+                margin-right: -10%;
+                width: 180px;
+                height: 900px;
+                position: absolute;
+                box-sizing: border-box;
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
+                transition: 1s transform linear;
+                transform-origin: left;
+                cursor: pointer;
+                z-index: 100;
+            }
+
+            
+    .thumbOpened {
+        /*background-color:red;*/
+        transform: rotateY(90deg);
+        transform-origin: 8px;
+        transition: .5s linear;
+    }
+
+    @keyframes go {
+      100%{
+        opacity:1;
+        transform:rotateY(0deg);
+      }
+    }
+
+    h2 {
+        position:center;
+        text-align: center;
+        font-size: 35px;
+        color:white;
+        font-family: 'Monofett', cursive;
+        text-shadow: 2px 2px #000000;
+    }
+
+    ul {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Monofett', cursive;
+        color:white;
+        text-shadow: 2px 2px #000000;
+    }
+    
+    a {
+        color:white;
+    }
+    a:hover {
+        color:white;
+        text-shadow: 2px 2px #000000;
+    }
+
+    .grow {
+        font-size: 40px;
+        transition: all .2s ease-in-out;
+        transform-origin: 10%;
+        color:white;
+    }
+
+
+
+    .hidden {
+        opacity: 0;
+    }
+
+    @-moz-keyframes materialize {
+    0% { opacity: 100%; }
+    50% { opacity: 0; }
+    100% { opacity: 100%; }
+    }
+    @-webkit-keyframes materialize {
+    0% { opacity: 100%; }
+    50% { opacity: 0; }
+    100% { opacity: 100%; }
+    }
+    @keyframes materialize {
+    0% { opacity: 100%; }
+    50% { opacity: 0; }
+    100% { opacity: 100%; }
+    }
+
+
+
+    .tardisDematerialize:hover {
+        -moz-animation: materialize 3s 3 alternate ease-in-out;
+        -webkit-animation: materialize 3s 3 alternate ease-in-out;
+        animation: materialize 3s 3 alternate ease-in-out;
+        /*display: block;*/
+        /*margin: 0 auto;*/
+    }
+
+
+    .controlRoom {
+        display: block;
+        background-image:url("tardi/1.png");
+        z-index: 0;
+        top: 30%;
+        left:20%;
+        margin-right: -10%;
+        width: 180px;
+        height: 643px;
+        position: absolute;
+        /*transition: all 2s ease-out;*/
+        transition-delay: 1s;
+        -webkit-transform:scale(1.4);
+        -moz-transform:scale(1.4);
+        -ms-transform:scale(1.4);
+        transform:scale(1.4);      
+    }
+
+/*div#riley.col-md-4{
+    position:relative;
+}
+*/
+
+/*div#turbles.col-md-4.col-md-offset-8 {   
+    display:inline;
+    top:0;
+    margin-top:10%;
+    padding-top:10px;
+    width:100px;
+    position:relative;
+} */
+
+
+img#turblesPic {
+    border-radius: 50%;
+    /*float:top;*/
+}
+
+
+
+.row{
+
+    /*height:600px;*/
+    /*overflow:hidden; */
+}
+
+#rileyBrock{
+    height:900px;
+    width:600px;
+}
+
+#brockPic {
+    border-radius: 50%;
+    -webkit-transform:scale(0.4);
+    -moz-transform:scale(0.4);
+    -ms-transform:scale(0.4);
+    transform:scale(0.4); 
+}
+
+#rileyPic {
+    border-radius: 50%;
+    -webkit-transform:scale(0.3);
+    -moz-transform:scale(0.3);
+    -ms-transform:scale(0.3);
+    transform:scale(0.3); 
+}
+
+/*p {
+    text-align: center
+}*/
+
+.img-circle {
+   -webkit-transform:scale(0.5);
+-moz-transform:scale(0.5);
+-ms-transform:scale(0.5);
+transform:scale(0.5);     
+}
+
