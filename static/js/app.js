@@ -21,38 +21,14 @@
                       console.log("removed thumbOpened");
                       console.log("navbar show");
                       setTimeout(function() {$(".navbar").removeClass("hidden");}, 200);
-                      console.log("removed hidden")
-
-      
-
+                      console.log("removed hidden");
                   }
-                  }
+                  };
               
 
 
 
-      $('.navLink').hover(function(){ // or any other event
-      $(this).addClass('grow'); 
-      });
-
-
-
-      $('.navLink').mouseout(function(){ // or any other event
-      $(this).removeClass('grow');
-      });
-
-      $('.navLink').click(function(event){ // or any other event
-        
-      event.preventDefault();
-      $('.tardisMenu').addClass('tardisDematerialize'); 
-      console.log("tardisDematerialize");
-         
-
-         setTimeout(function () {
-             window.location.href = "podcasts.html"; //will redirect to your blog page (an ex: blog.html)
-          }, 6000); //will call the function after 2 secs.
-
-      });
+      
 
 
 
@@ -128,4 +104,61 @@
             //     $('.controlRoom').css('background-image', random);
             //     $('.controlRoom').click();
             // }, 2000);
-        }
+        };
+      
+
+$('.linkNav').hover(function(){ 
+  console.log("hello!");// or any other event
+  $(this).addClass('grow'); 
+      });
+
+
+
+$('.linkNav').mouseout(function(){ // or any other event
+  $(this).removeClass('grow');
+});
+
+$('.linkNavEp').click(function(event){ // or any other event
+        event.preventDefault();
+        $('.tardisMenu').addClass('tardisDematerialize'); 
+        console.log("tardisDematerialize");       
+         
+        // var navURL = $("a.linkNav").();
+        // console.log(navURL);
+
+         setTimeout(function () {
+             window.location.href = "http://playingdoctor.podbean.com/"; //will redirect to your blog page (an ex: blog.html)
+          }, 6000); //will call the function after 2 secs.
+         
+});
+
+$('.linkNavFb').click(function(event){ // or any other event
+        event.preventDefault();
+        $('.tardisMenu').addClass('tardisDematerialize'); 
+        console.log("tardisDematerialize");       
+         
+        // var navURL = $("a.linkNav").();
+        // console.log(navURL);
+
+         setTimeout(function () {
+             window.location.href = "https://www.facebook.com/laughingatarchaeologists/?fref=ts"; //will redirect to your blog page (an ex: blog.html)
+          }, 6000); //will call the function after 2 secs.
+         
+});
+
+$('.linkNavPa').click(function(event){ // or any other event
+        event.preventDefault();
+        $('.tardisMenu').addClass('tardisDematerialize'); 
+        console.log("tardisDematerialize");       
+         
+        // var navURL = $("a.linkNav").();
+        // console.log(navURL);
+
+         setTimeout(function () {
+             window.location.href = "https://www.patreon.com/laughingatarchaeologists?ty=h"; //will redirect to your blog page (an ex: blog.html)
+          }, 6000); //will call the function after 2 secs.
+         
+});
+
+
+
